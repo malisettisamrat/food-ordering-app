@@ -1,13 +1,11 @@
 import { Product } from "@/src/types";
 import { Link } from "expo-router";
 import { View, Image, Text, Pressable } from "react-native";
+import { defaultProductImage } from "@/src/constants/Images";
 
 interface ProductListItemProps {
   product: Product;
 }
-
-const defaultProductImage =
-  "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/default.png";
 
 const ProductListItem = ({ product }: ProductListItemProps) => {
   return (
