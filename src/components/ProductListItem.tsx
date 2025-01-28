@@ -1,5 +1,5 @@
 import { Product } from "@/src/types";
-import { Link } from "expo-router";
+import { Link, useSegments } from "expo-router";
 import { View, Image, Text, Pressable } from "react-native";
 import { defaultProductImage } from "@/src/constants/Images";
 
@@ -8,8 +8,10 @@ interface ProductListItemProps {
 }
 
 const ProductListItem = ({ product }: ProductListItemProps) => {
+  // const segments = useSegments();
+  // console.log(segments, "Segments");
   return (
-    <Link href={`/menu/${product.id}`} asChild>
+    <Link href={`./menu/${product.id}`} asChild>
       <Pressable className="flex-1 max-w-[50%] items-center bg-white p-4 rounded-2xl justify-center">
         <Image
           source={{ uri: product.image || defaultProductImage }}

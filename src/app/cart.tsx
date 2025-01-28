@@ -1,7 +1,7 @@
 import { View, Text, FlatList } from "react-native";
 import React from "react";
 import { useCart } from "@/src/providers/CartProvider";
-import CartListItem from "@/src/components/CardListItem";
+import CartListItem from "@/src/components/CartListItem";
 import Button from "../components/Button";
 
 const CartScreen = () => {
